@@ -27,4 +27,14 @@ class FindDivisorTest {
         //then
         assertThat(result).containsExactly(1, 2);
     }
+
+    @Test
+    void findDivisor3() {
+        //given
+        int n = 108;
+        //when
+        int[] result = solution.findDivisor(n);
+        //then
+        assertThat(result).containsExactly(1, 2, 3, 4, 6, 9, 12, 18, 27, 36, 54, 108);
+    }
 }

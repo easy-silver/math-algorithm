@@ -28,7 +28,7 @@ public class FindDivisor {
         Integer[] array = set.toArray(new Integer[0]);
 
         //결과 배열을 반환한다.
-        return Arrays.stream(array).mapToInt(Integer::intValue).toArray();
+        return Arrays.stream(array).mapToInt(Integer::intValue).sorted().toArray();
     }
 
 }
