@@ -10,6 +10,7 @@ import java.util.Set;
 public class FindDivisor {
 
     public int[] findDivisor(int n) {
+        //중복을 막기 위해 Set에 담는다.
         Set<Integer> set = new HashSet<>();
 
         //n의 수만큼 반복문을 실행한다.
